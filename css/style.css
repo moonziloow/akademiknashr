@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #252420;
+}
+
+/* BODY */
+body{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+
+.orange-line {
+    width: 80px;
+    height: 3px;
+    background-color: #ff7500;
+}
+
+/* Container */
+.container{
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.orange-button:hover{
+    color: rgba(255, 255, 255, 0.459);
+}
+
+/* Button */
+.orange-button {
+    display: inline-block;
+    background-color: #ff7500;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+}
+
+/* Header */
+.header {
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-links-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.header-links{
+    display: flex;
+    gap: 32px;
+}
+
+.header-links a:hover{
+    color: #ff7500;
+}
+
+/* HERO */
+.hero {
+    background-color: #252420;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.hero-line {
+    margin-bottom: 40px;
+}
+
+.hero-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    max-width: 387px;
+    width: 100%;
+}
+
+.hero-title {
+    font-size: 40px;
+    margin-bottom: 22px;
+    letter-spacing: 0.5px;
+    line-height: 122%;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+.hero-text{
+    margin-bottom: 32px;
+}
+
+.hero-img {
+    right: 0;
+    top: -40px;
+    position: absolute;
+    width: 510px;
+    height: 510px;
+    border-radius: 8px;
+    box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 60%);
+}
+
+/* WHY */
+
+.why{
+    padding-bottom: 330px;
+    padding-top: 240px;
+}
+
+.why-line {
+    margin-top: 24px;
+}
+
+.why-title{
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    margin-top: 72px;
+    margin-bottom: 72px;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+    font-size: 72px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card {
+    max-width: 340px;
+    width: 100%;
+}
+
+/* Circle */
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 117, 0,20%);
+    margin-bottom: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title{
+    font-family: "Roboto Condenced", "Arial", sans-serif;
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+/* CTA */
+
+.cta{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px;
+    margin-bottom: 160px;
+    background-color: #252420;
+    border-radius: 10px;
+    color: white;
+}
+
+.cta-content {
+    max-width: 440px;
+    width: 100%;
+}
+
+.cta-title {
+    font-family: "Roboto Condenced", "Arial", sans-serif;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+}
+
+.cta-text{
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.orange-text{
+    /* justify-content */
+    /* row */
+    color: #ff7500;
+}
+
+.cta-img {
+    top: -85px;
+    right: 64px;
+    width: 440px;
+    height: 440px;
+    border-radius: 12px;
+    position: absolute;
+}
+
+/* FOoter */
+
+.footer{
+    background-color: #f8f8f8;
+    padding-bottom: 56px;
+    padding-top: 56px;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.socials {
+    display: flex;
+    gap: 16px;
+}
+
+
+
+.footer-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 64px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: #252420;
+}
+
+.footer-links a:hover{
+    color: #ff7500;
+}
+
