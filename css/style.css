@@ -1,25 +1,56 @@
+:root {
+  --jigarrang: #ff7500;
+  --qora: #252420;
+  --orange: orange;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Medium.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   padding: 0%;
   margin: 0;
   box-sizing: border-box;
 }
+
 ul {
   list-style: none;
 }
 a {
   text-decoration: none;
-  color: #252420;
+  color: var(--qora);
 }
-/* .orange-line{ */
-/*     
-} */
 
 /* body */
 body {
-  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.5px;
+  font-family: "Roboto Condensed";
 }
 
 .container {
@@ -34,7 +65,7 @@ body {
 /* button */
 .orange-button {
   display: inline-block;
-  background-color: #ff7500;
+  background-color: var(--jigarrang);
   color: white;
   text-decoration: none;
   padding: 12px 24px;
@@ -50,12 +81,12 @@ body {
   margin-bottom: 20px;
   width: 75px;
   height: 5px;
-  background-color: orange;
+  background-color: var(--orange);
 }
 .top-line {
   width: 100%;
   height: 5px;
-  background-color: orange;
+  background-color: var(--orange);
 }
 
 .header-container {
@@ -81,18 +112,98 @@ nav {
   gap: 32px;
 }
 .header-links a:hover {
-  color: #ff7500;
+  color: var(--jigarrang);
+}
+
+/* Mene toggle */
+
+.slide {
+  position: absolute;
+  top: -107px;
+  border-radius: 5px;
+  right: 5px;
+  width: 90%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  transition: 0.5s ease;
 }
 
 .menu {
-  width: 40px;
-  height: 40px;
   display: none;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.menu .common {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: var(--qora);
+  border-radius: 50px;
+  transition: 0.5s ease;
+}
+
+.menu .top_line {
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.menu .middle_line {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.menu .bottom_line {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input:checked ~ .menu .top_line {
+  left: 5px;
+  top: 14px;
+  transform: rotate(45deg);
+}
+
+input:checked ~ .menu .bottom_line {
+  left: 5px;
+  top: 14px;
+  transform: rotate(-45deg);
+}
+
+input:checked ~ .menu .middle_line {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+input:checked ~ .slide {
+  top: 107px;
+}
+
+.slide-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input_checkbox {
+  display: none;
+  visibility: hidden;
 }
 
 /* HERO */
 .hero {
-  background-color: #252420;
+  background-color: var(--qora);
   color: white;
   padding: 80px 20px;
 }
@@ -184,7 +295,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #252420;
+  background-color: var(--qora);
   border-radius: 10px;
   color: white;
   padding: 64px;
@@ -209,7 +320,7 @@ nav {
 }
 
 .orange-text {
-  color: #ff7500;
+  color: var(--jigarrang);
 }
 
 .cta-img {
@@ -248,7 +359,7 @@ nav {
 }
 
 .footer-link {
-  color: #252420;
+  color: var(--qora);
 }
 .footer-links {
   display: flex;
@@ -257,10 +368,10 @@ nav {
 }
 
 .header-link {
-  color: #252420;
+  color: var(--qora);
 }
 .footer-links a:hover {
-  color: #ff7500;
+  color: var(--jigarrang);
 }
 /* RESPONSIVE */
 @media (max-width: 1024px) {
